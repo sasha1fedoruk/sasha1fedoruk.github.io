@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск жилья</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav id="header" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="visible-md visible-lg col-md-4 ">
+
+                    <div class="header-block">
+                        <div class="row">
+                            <div class="col-md-4 vertical-center"><a href="#">Главная</a></div>
+                            <div class="col-md-4"><a href="#">Поиск сожителя</a></div>
+                            <div class="col-md-4"><a href="#">Поиск жилья</a></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-3 col-xs-4">
+                    <div id="brand">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="visible-md visible-lg col-md-4">
+                    <div class="header-block">
+                        <div class="row">
+                            <div class="col-md-4 vertical-center">
+                                <a href="#">Войти</a>
+                            </div>
+                            <div class="col-md-8">
+                                <a href="#">
+                                    <div class="regBtn">
+                                        Регистрация
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden-md hidden-lg">
+                    <div class="header-block">
+                        <button type="button" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="expanded-menu" class="row hidden-md hidden-lg">
+            <hr>
+            <ul class="expanded-list">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Поиск сожителя</a></li>
+                <li><a href="#">Поиск жилья</a></li>
+                <li>
+                    <hr>
+                </li>
+                <li><a href="#">Вход</a></li>
+                <li><a href="#">Регистрация</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div id="content">
+            <div id="registration-form">
+                <div class="row">
+                    <h3>Регистрация нового пользователя</h3>
+                    <h4>Основная информация</h4>
+                    <div class="row form-group">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="row form-group-element">
+                                <div class="col-md-12">
+                                    <p>Имя</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" placeholder="Имя">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="row form-group-element">
+                                <div class="col-md-12">
+                                    <p>Фамилия</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" placeholder="Фамилия">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="row form-group-element">
+                                <div class="col-md-12">
+                                    <p>Дата рождения</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" placeholder="Дата рождения">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="row form-group-element">
+                                <div class="col-md-12">
+                                    <p>Логин</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" placeholder="Логин">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="row form-group-element">
+                                <div class="col-md-12">
+                                    <p>Пароль</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" placeholder="Пароль">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="row form-group-element">
+                                <div class="col-md-12">
+                                    <p>Пароль ещё раз</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" placeholder="Пароль ещё раз">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="row form-group-element">
+                                <div class="col-md-12">
+                                    <p>Город</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" placeholder="Город">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="row form-group-element">
+                                <div class="col-md-12">
+                                    <p>Пол</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="m" checked> Мужчина
+                                            </label>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="w"> Женщина
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="row form-group-element">
+                                <div class="col-md-12">
+                                    <p>В поиске сожителя</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <select class="form-control" placeholder="В поиске сожителя">
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h4>Контактная информация</h4>
+                    <div class="row form-group">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="row form-group-element">
+                                <div class="col-md-12">
+                                    <p>Email</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="row form-group-element">
+                                <div class="col-md-12">
+                                    <p>Мобильный номер</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" placeholder="Мобильный номер">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="row form-group-element">
+                                <div class="col-md-12">
+                                    <p>Skype</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" placeholder="Skype">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h4>Дополнительная информация</h4>
+                    <div class="row form-group">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="row form-group-element">
+                                <div class="col-md-12">
+                                    <p>Род деятельности</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <select class="form-control">
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="row form-group-element">
+                                <div class="col-md-12">
+                                    <p>Наличие жилья</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <select class="form-control">
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="row form-group-element">
+                                <div class="col-md-12">
+                                    <p>О себе</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea>
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-offset-3 col-md-offset-4 col-xs-12 col-sm-6 col-md-4">
+                        <input class="btn btn-default btn-registration" type="button" value="Регистрация">
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-6">
+                <div class="contacts">
+                    <h2>Контакты:</h2>
+                    <p>E-mail: sasha1.fedoruk@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6 col-sm-push-4">
+                <div class="row">
+                    <div class="col-md-offset-6 col-sm-offset-4 col-md-3 col-sm-4 col-xs-6">
+                        <div class="network-img">
+                            <a href="#">
+                                <img src="img/facebook.png" alt="Facebook">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="network-img">
+                            <a href="#">
+                                <img src="img/vk.png" alt="VK">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 col-sm-pull-4">
+                <div class="created">
+                    Created @Sasha Fedoruk
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

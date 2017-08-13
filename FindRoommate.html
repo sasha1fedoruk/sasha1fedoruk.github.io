@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск сожителя</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav id="header" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="visible-md visible-lg col-md-4 ">
+
+                    <div class="header-block">
+                        <div class="row">
+                            <div class="col-md-4 vertical-center"><a href="#">Главная</a></div>
+                            <div class="col-md-4"><a href="#">Поиск сожителя</a></div>
+                            <div class="col-md-4"><a href="#">Поиск жилья</a></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-3 col-xs-4">
+                    <div id="brand">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="visible-md visible-lg col-md-4">
+                    <div class="header-block">
+                        <div class="row">
+                            <div class="col-md-4 vertical-center">
+                                <a href="#">Войти</a>
+                            </div>
+                            <div class="col-md-8">
+                                <a href="#">
+                                    <div class="regBtn">
+                                        Регистрация
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden-md hidden-lg">
+                    <div class="header-block">
+                        <button type="button" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="expanded-menu" class="row hidden-md hidden-lg">
+            <hr>
+            <ul class="expanded-list">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Поиск сожителя</a></li>
+                <li><a href="#">Поиск жилья</a></li>
+                <li>
+                    <hr>
+                </li>
+                <li><a href="#">Вход</a></li>
+                <li><a href="#">Регистрация</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div id="content">
+            <div id="filter">
+                <details open>
+                    <summary>
+                        <div class="row">
+                            <h3>Критерии поиска</h3>
+                        </div>
+                    </summary>
+                    <div class="row">
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12 find-option">
+                            <div class="row">
+                                <p>Возраст</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <input type="number" class="form-control" placeholder="От">
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <input type="number" class="form-control" placeholder="До">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 find-option">
+                            <div class="row">
+                                <p>Стать</p>
+                            </div>
+                            <div class="row">
+                                <select class="form-control">
+                                    <option value="">Не важно</option>
+                                    <option value="M">Мужчина</option>
+                                    <option value="W">Женщина</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 find-option">
+                            <div class="row">
+                                <p>Город</p>
+                            </div>
+                            <div class="row">
+                                <input type="text" class="form-control" placeholder="Название города">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 find-option">
+                            <div class="row">
+                                <p>Род деятельности</p>
+                            </div>
+                            <div class="row">
+                                <select class="form-control">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 find-option">
+                            <div class="row">
+                                <p>Наличие жилья</p>
+                            </div>
+                            <div class="row">
+                                <select class="form-control">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 find-option">
+                            <div class="row">
+                                <p>Тип жилья</p>
+                            </div>
+                            <div class="row">
+                                <select class="form-control">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 find-option">
+                            <div class="row">
+                                <p>Состояние жилья</p>
+                            </div>
+                            <div class="row">
+                                <select class="form-control">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 find-option">
+                            <div class="row">
+                                <p>Цена</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <input type="number" class="form-control" placeholder="От (грн.)">
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <input type="number" class="form-control" placeholder="До (грн.)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-offset-4 col-md-4">
+                            <input class="btn btn-default btn-find" type="button" value="Найти">
+                        </div>
+                    </div>
+                </details>
+            </div>
+
+            <div id="res-find-roommate">
+                <div class="res-find">
+                    <div class="row title">
+                        <div class="col-xs-10 col-sm-11">
+                            <h3>Саша Федорук</h3>
+                        </div>
+                        <div class="col-xs-2 col-sm-1">
+                            <img src="img/UserFavorite.png" alt="" class="img-favorite">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-offset-4 col-sm-offset-0 col-xs-4 col-sm-5 col-md-3 content-center">
+                            <img src="img/User/user.jpg" alt="User Image" class="img-user">
+                        </div>
+
+                        <div class="col-sm-7 col-md-9 ">
+
+                            <div class="row info-tabble content-center">
+                                <div class="col-xs-12 col-md-1">
+                                    <div class="row info-tabble-element">
+                                        <div class="col-xs-5 col-md-12">
+                                            <p>Пол</p>
+                                        </div>
+                                        <div class="col-xs-7 col-md-12">
+                                            <img src="img/Man.png" alt="Gender">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-2">
+                                    <div class="row info-tabble-element">
+                                        <div class="col-xs-5 col-md-12">
+                                            <p>Возраст</p>
+                                        </div>
+                                        <div class="col-xs-7 col-md-12">
+                                            <p>17</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-2">
+                                    <div class="row info-tabble-element">
+                                        <div class="col-xs-5 col-md-12">
+                                            <p>Наличие жилья</p>
+                                        </div>
+                                        <div class="col-xs-7 col-md-12">
+                                            <p>+</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-3">
+                                    <div class="row info-tabble-element">
+                                        <div class="col-xs-5 col-md-12">
+                                            <p>Род деятельности</p>
+                                        </div>
+                                        <div class="col-xs-7 col-md-12">
+                                            <p>Студент</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="row info-tabble-element">
+                                        <div class="col-xs-5 col-md-12">
+                                            <p>Город проживания</p>
+                                        </div>
+                                        <div class="col-xs-7 col-md-12">
+                                            <p>Ивано-Франковск, Украина</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row info-text hidden-xs hidden-sm">
+                                <p><b>Информация про пользователя:</b> Тут буде міститися інформація про користувача, яку він вирішив викласи. Тут буде міститися інформація про користувача, яку він вирішив викласи. Тут буде міститися інформація про користувача, яку він вирішив викласи.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row content-center additional-information">
+                        <details>
+                            <summary>
+                                <p><b>Требования к сожителю и жилью</b></p>
+                            </summary>
+                            <div class="row info-tabble content-center">
+                                <div class="col-xs-12 col-sm-3 col-md-1">
+                                    <div class="row info-tabble-element">
+                                        <div class="col-xs-5 col-sm-12 col-md-12">
+                                            <p>Пол</p>
+                                        </div>
+                                        <div class="col-xs-7 col-sm-12 col-md-12">
+                                            <img src="img/Man.png" alt="Gender">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 col-md-1">
+                                    <div class="row info-tabble-element">
+                                        <div class="col-xs-5 col-sm-12 col-md-12">
+                                            <p>Возраст</p>
+                                        </div>
+                                        <div class="col-xs-7 col-sm-12 col-md-12">
+                                            <p>16-20</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 col-md-2">
+                                    <div class="row info-tabble-element">
+                                        <div class="col-xs-5 col-sm-12 col-md-12">
+                                            <p>Наличие жилья</p>
+                                        </div>
+                                        <div class="col-xs-7 col-sm-12 col-md-12">
+                                            <p>+</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 col-md-2">
+                                    <div class="row info-tabble-element">
+                                        <div class="col-xs-5 col-sm-12 col-md-12">
+                                            <p>Род деятельности</p>
+                                        </div>
+                                        <div class="col-xs-7 col-sm-12 col-md-12">
+                                            <p>-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 col-md-1">
+                                    <div class="row info-tabble-element">
+                                        <div class="col-xs-5 col-sm-12 col-md-12">
+                                            <p>Тип жилья</p>
+                                        </div>
+                                        <div class="col-xs-7 col-sm-12 col-md-12">
+                                            <img src="img/Room.png" alt="Gender">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 col-md-1">
+                                    <div class="row info-tabble-element">
+                                        <div class="col-xs-5 col-sm-12 col-md-12">
+                                            <p>Состояние жилья</p>
+                                        </div>
+                                        <div class="col-xs-7 col-sm-12 col-md-12">
+                                            <p>После ремонта</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 col-md-2">
+                                    <div class="row info-tabble-element">
+                                        <div class="col-xs-5 col-sm-12 col-md-12">
+                                            <p>Цена</p>
+                                        </div>
+                                        <div class="col-xs-7 col-sm-12 col-md-12">
+                                            <p>100-200$</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 col-md-2">
+                                    <div class="row info-tabble-element">
+                                        <div class="col-xs-5 col-sm-12 col-md-12">
+                                            <p>Город для проживания</p>
+                                        </div>
+                                        <div class="col-xs-7 col-sm-12 col-md-12">
+                                            <p>Ивано-Франковск, Украина</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="hidden-xs hidden-sm col-md-12">
+                                    <hr>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-6">
+                <div class="contacts">
+                    <h2>Контакты:</h2>
+                    <p>E-mail: sasha1.fedoruk@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6 col-sm-push-4">
+                <div class="row">
+                    <div class="col-md-offset-6 col-sm-offset-4 col-md-3 col-sm-4 col-xs-6">
+                        <div class="network-img">
+                            <a href="#">
+                                <img src="img/facebook.png" alt="Facebook">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="network-img">
+                            <a href="#">
+                                <img src="img/vk.png" alt="VK">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 col-sm-pull-4">
+                <div class="created">
+                    Created @Sasha Fedoruk
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
