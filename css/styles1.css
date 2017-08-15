@@ -12,6 +12,7 @@ a:active {
     text-decoration: none !important;
 }
 
+
 /* MENU BLOCK */
 
 .navbar-default .navbar-nav > li {
@@ -28,6 +29,7 @@ a:active {
     display: inline-block;
     vertical-align: middle;
 }
+
 .vert-center-block {
     display: -moz-inline-box;
     display: inline-block;
@@ -44,6 +46,8 @@ a:active {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    left: 0;
+    right: 0;
 }
 
 .helper {
@@ -299,7 +303,8 @@ a:active {
     bottom: 0;
     padding: 10px 0;
 }
-.text-center-block{
+
+.text-center-block {
     font-size: 36pt;
     text-align: center;
     width: 100%;
@@ -307,17 +312,17 @@ a:active {
     display: block;
     position: relative;
 }
-.button-block{
+
+.button-block {
     width: 100%;
     height: inherit;
     display: block;
     position: relative;
-    
-}
-.button-block a{
-    font-size: 36pt;
 }
 
+.button-block a {
+    font-size: 36pt;
+}
 
 @media screen and (max-width: 1600px) {
     .block .logo,
@@ -403,12 +408,13 @@ a:active {
         margin: 50px 0px;
     }
 }
+
 @media screen and (max-width: 600px) {
     .block > .row {
         padding: 10px 0;
     }
     .after-btn a,
-    .button-block a{
+    .button-block a {
         font-size: 18pt;
     }
 }
@@ -416,41 +422,108 @@ a:active {
 
 /* END CONTENT BLOCK */
 
+
 /* FOOTER */
 
-footer{
-    display: table;
+footer {
     width: 100%;
+    height: inherit;
     background: #fafafa;
     border-top: 1px solid #cdd0d1;
-    height: inherit;
-    position: relative;
 }
-footer .logo{
-    width: 100%;
-    padding: 30px;
-    max-height: 350px;
-    text-align: center;
-}
-.contact-ico{
-    width: 100%;
-}
-footer .contacts{
+
+footer .logo-block {
     display: block;
+    text-align: center;
+    height: 250px;
+}
+
+footer .logo {
+    padding: 30px;
+    max-width: 420px;
     width: 100%;
-    height: 100%;
+}
+
+footer .contacts-img-block {
     text-align: center;
 }
-footer .contacts{
-    
+
+footer .middle-block {
+    height: 250px;
 }
-.contacts .c-adress{
+
+footer .contact-ico {
+    width: 70%;
+    max-width: 130px;
+    min-width: 85px;
+}
+
+footer .contacts-block {
+    display: block;
+    height: 250px;
+    text-align: center;
+}
+
+.contacts-block .c-adress {
     font-size: 24pt;
 }
-.contacts .c-creator{
+
+.contacts-block .c-creator {
     font-size: 18pt;
 }
+
+footer .contacts-block > div {
+    height: auto;
+    width: 100%;
+}
+
 footer > div {
     position: relative;
 }
+
+
+@media screen and (max-width: 1600px) {
+    .contacts-block .c-adress {
+        font-size: 22pt;
+    }
+    .contacts-block .c-creator {
+        font-size: 16pt;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .contacts-block .c-adress {
+        font-size: 17pt;
+    }
+    .contacts-block .c-creator {
+        font-size: 14pt;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .contacts-block .c-adress {
+        font-size: 16pt;
+    }
+    .contacts-block .c-creator {
+        font-size: 13pt;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    footer .contacts-img-block,
+    footer .contacts-block {
+        height: 120px;
+    }
+    footer .contact-ico {
+        width: 50%;
+    }
+    footer .logo-block {
+        height: 235px;
+    }
+    footer .logo {
+        padding: 30px;
+    }
+}
+
+
 /* END FOOTER */
